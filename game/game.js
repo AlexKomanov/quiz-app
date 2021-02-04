@@ -59,7 +59,7 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("/end.html");
+    return window.location.assign("./endGame/end.html");
   }
 
   questionCounter++;
@@ -102,7 +102,7 @@ choices.forEach((choice) => {
     selectedChoice.parentElement.classList.add(classToApply);
 
     // if(classToApply === 'incorrect'){
-    //     return window.location.assign("/end.html");
+    //     return window.location.assign("./endGame/end.html");
     // }
 
     setTimeout(() => {
