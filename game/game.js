@@ -64,7 +64,7 @@ getNewQuestion = () => {
 
   questionCounter++;
   progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-  progressBarFull.getElementsByClassName.width = `${
+  progressBarFull.style.width = `${
     (questionCounter / MAX_QUESTIONS) * 100
   }%`;
 
@@ -100,6 +100,10 @@ choices.forEach((choice) => {
     }
 
     selectedChoice.parentElement.classList.add(classToApply);
+
+    // if(classToApply === 'incorrect'){
+    //     return window.location.assign("/end.html");
+    // }
 
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
