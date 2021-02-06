@@ -12,15 +12,16 @@
 <body>
     <div class="container">
         <div id="end" class="flex-center flex-column">
+            <p id="final-score-text">Ваш результат</p>
             <h1 id="finalScore">0</h1>
             <form class="end-form-container">
-                <h2 id="end-text">Enter name for score</h2>
-                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <h2 id="end-text">Введите ваше имя</h2>
+                <input type="text" name="name" id="username" placeholder="Ваше имя">
                 <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)"
-                    disabled>Save</button>
+                    disabled>Сохранить результат</button>
             </form>
-            <a href="../game.html" class="btn">Play Again<i class="fas fa-reply"></i></a>
-            <a href="/" class="btn">Go Home<i class="fas fa-home"></i></a>
+            <a href="../game.html" class="btn">Играть снова<i class="fas fa-reply"></i></a>
+            <a href="/" class="btn">Домашняя страница<i class="fas fa-home"></i></a>
         </div>
     </div>
     <script src="end.js"></script>
